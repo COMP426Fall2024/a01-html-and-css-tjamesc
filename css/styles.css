@@ -1,0 +1,250 @@
+header {
+    color: #FFF5EE;
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 50, 0.8), rgba(139, 69, 19, 0.8) 80%, rgba(34, 139, 34, 0.6));
+    color: #FFF5EE;
+    position: relative;
+    min-height: 100vh;
+    overflow-x: hidden;
+    padding-bottom: 80px;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../assets/stardust.png') repeat;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+h1, h2, h3 {
+    font-family: 'IM Fell DW Pica SC', serif;
+    color: #FFF5EE;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+#main-content img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #FFF5EE;
+    padding: 5px;
+}
+
+#appearance {
+    padding: 20px;
+}
+
+#appearance p {
+    font-size: 12px;
+}
+
+.appearance-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 10%;
+}
+
+.appearance-content ul {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.appearance-content p {
+    display: flex;
+    margin-top: 0;
+}
+
+.appearance-content img {
+    max-width: 60%;
+    margin-left: 20px;
+    border: 2px solid #FFF5EE;
+    padding: 5px;
+}
+
+#appearance h2 {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#overview {
+    padding: 0 15%;
+    text-align: center;
+}
+
+.appearance-content ul {
+    flex: 1;
+    padding-right: 20px;
+    line-height: 2.5em;
+}
+
+#alleghenies {
+    float: left;
+    width: 30%;
+    background-color: rgba(139, 69, 19, 0.5);
+    padding: 10px;
+    margin-right: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    font-family: 'Merriweather', serif;
+}
+
+.story-content {
+    width: 60%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+a {
+    color: #FFF5EE;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f1c40f;
+    text-decoration: underline;
+}
+
+#origin {
+    padding: 20px;
+    text-align: center;
+}
+
+.origin-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.textbox {
+    background-color: rgba(139, 69, 19, 0.5);
+    padding: 20px;
+    flex: 1;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.origin-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-family: 'IM Fell DW Pica SC', serif;
+    color: #FFF5EE;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#references {
+    text-align: center;
+    padding: 20px;
+}
+
+#story-selector {
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 18px;
+}
+
+#image-container img {
+    max-width: 80%;
+    border: 2px solid #FFF5EE;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+}
+
+#image-container p {
+    color: #FFF5EE;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.office-list ul {
+    flex: 1;
+    padding-right: 20px;
+    line-height: 2.5em;
+}
+
+.office-list {
+    text-align: left;
+    margin: 20px 0;
+    float: left;
+    width: 50%;
+}
+
+#the-office-content img {
+    max-width: 50%;
+    float: right;
+    border: 2px solid #FFF5EE;
+    margin-left: 20px;
+}
+
+#the-office-content p {
+    font-size: 20px;
+}
+
+#christmas-chronicles-content table tr td {
+    vertical-align: middle;
+}
+
+#christmas-chronicles-content img {
+    max-width: 100%;
+    border: 2px solid #FFF5EE;
+}
+
+#christmas-chronicles-content p {
+    text-align: left;
+    padding: 10px;
+    font-size: 20px;
+}
+
+#christmas-chronicles-content table {
+    width: 100%;
+    margin: 0 auto; 
+    text-align: center;
+}
+
+#christmas-chronicles-content td {
+    width: 50%; 
+    vertical-align: middle; 
+    padding-left: 20px;
+}
+
+#christmas-chronicles-content {
+    display: none;
+}
+
+#the-office-content {
+    display: block;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belsnickel - References</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica+SC&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Belsnickel in Pop Culture</h1>
+        <nav>
+            <a href="index.html">Home</a> | 
+            <a href="origin.html">Origin</a>
+        </nav>
+    </header>
+
+    <section id="references">
+        <h2>Select a story to display</h2>
+        <select id="story-selector">
+            <option value="office">The Office</option>
+            <option value="chronicles">Christmas Chronicles</option>
+        </select>
+
+        <div id="image-container">
+            <!-- The Office content -->
+            <div id="the-office-content">
+                <img src="../assets/dwight_belsnickel.png" alt="Dwight as Belsnickel">
+                <p>In the popular TV series, The Office, Dwight Schrute portrayed Belsnickel at an office
+                    Christmas party. He spent most of his night determining if his coworkers were "impish or
+                    admirable," a knockoff of "naughty or nice." He gives out German food, treats, and gifts
+                    to his admirable coworkers, and coal to his impish coworkers. Dwight even hits Jim repeatedly
+                    with his switch when Jim announces he is taking a new job in Philadelphia. </p>
+                <div class="office-list">
+                    <ul>
+                        <li>"They say some people were born to be bad, but I was born to be Belsnickel."</li>
+                        <li>"Since I was nine, my grandfather would dress up as Belsnickel for Christmas. He was ok at it. I am great."</li>
+                        <li>"Cheer or fear." "Impish or admirable."</li>
+                        <li>"Belsnickel is nigh!"</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Xmas Chronicles content -->
+            <div id="christmas-chronicles-content">
+                <table>
+                    <tr>
+                        <td>
+                            <img src="../assets/xmas_chronicles_b.jpg" alt="Christmas Chronicles Belsnickel">
+                        </td>
+                        <td>
+                            <p>An edgy portrayal of Belsnickel in The Christmas Chronicles 2. He is not
+                                an evil character canonically, but in this movie his goal is to destroy
+                                Christmas and kill Santa. You can see a classic drawing of Belsnickel in
+                                the image as well, as he prepares to use his switch on a screaming child in front of his family.
+                                Merry Christmas.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>This is probably the coolest Santa I've ever seen. It makes sense
+                                that this Santa was able to defeat that angsty, teen version of Belsnickel.
+                                Belsnickel is only the 5th most popular gift-bringer in German folklore after all,
+                                but Santa is the undeniable best gift-bringer in the US.
+                            </p>
+                            <p>Apparently Santa wins the fight against Belsnickel by having his 
+                                elves start a snowball fight, which gives Santa the opening to rescue an
+                                imprisoned Jack Frost. Santa and Jack take down Belsnickel.
+                            </p>
+                        </td>
+                        <td>
+                            <img src="../assets/xmas_chronicles_s.jpg" alt="Christmas Chronicles Scene">
+                        </td>
+                    </tr>
+                </table>
+            </div>            
+        </div>        
+    </section>
+
+    <script>
+        const storySelector = document.getElementById('story-selector');
+        const theOfficeContent = document.getElementById('the-office-content');
+        const christmasChroniclesContent = document.getElementById('christmas-chronicles-content');
+
+        storySelector.addEventListener('change', function() {
+            const selectedStory = storySelector.value;
+
+            if (selectedStory === 'office') {
+                // The Office content
+                theOfficeContent.style.display = 'block';
+                christmasChroniclesContent.style.display = 'none';
+            } else if (selectedStory === 'chronicles') {
+                // Xmas Chronicles content
+                theOfficeContent.style.display = 'none';
+                christmasChroniclesContent.style.display = 'block';
+            }
+        });
+    </script>
+</body>
+</html>
